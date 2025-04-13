@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://berkine.ticksy.com/"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Buy Now",
+    "url": "https://1.envato.market/gbM0b5"
   },
   "anchors": [
     {
@@ -37,7 +37,7 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
+        "server requirements",
         "development"
       ]
     },
