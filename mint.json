@@ -36,9 +36,9 @@
     {
       "group": "Get Started",
       "pages": [
-        "Introduction",
-        "Server Requirements",
-        "Installation"
+        "introduction",
+        "server requirements",
+        "installation"
       ]
     },
     {
