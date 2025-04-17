@@ -1,0 +1,185 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "Davinci AI",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373"
+  },
+  "styling": {
+    
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "favicon": "/logo/favicon.ico",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "requirements",              
+          "installation"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          {
+            "group": "AI Vendors",
+            "pages": ["integrations/ai/openai",
+                      "integrations/ai/anthropic",
+                      "integrations/ai/xai",
+                      "integrations/ai/deepseek",
+                      "integrations/ai/google",
+                      "integrations/ai/elevenlabs",
+                      "integrations/ai/stability",
+                      "integrations/ai/azure",
+                      "integrations/ai/aws"
+                      ]
+          },
+          {
+            "group": "Cloud Storages",
+            "pages": ["integrations/storage/s3",
+                      "integrations/storage/cloudflare",
+                      "integrations/storage/wasabi",
+                      "integrations/storage/dropbox",
+                      "integrations/storage/gcp",
+                      "integrations/storage/storj"
+                      ]
+          },
+          {
+            "group": "Other Vendors",
+            "pages": ["integrations/other/youtube",
+                      "integrations/other/serper"
+                      ]
+          }         
+        ]
+      },
+      {
+        "group": "SaaS Features",
+        "pages": [
+          {
+            "group": "Payment Gateways",
+            "pages": ["saas/gateways/stripe",
+                      "saas/gateways/paypal",
+                      "saas/gateways/razorpay",
+                      "saas/gateways/paystack",
+                      "saas/gateways/mollie",
+                      "saas/gateways/paddle-classic",
+                      "saas/gateways/flutterwave",
+                      "saas/gateways/yookassa",
+                      "saas/gateways/braintree",
+                      "saas/gateways/midtrans",
+                      "saas/gateways/iyzico",
+                      "saas/gateways/coinbase",
+                      "saas/gateways/coinremitter",
+                      "saas/gateways/bank-transfer"
+                      ]
+          },
+          "saas/subscription-plan",
+          "saas/prepaid-plan",
+          "saas/referral",
+          "saas/finance-settings"          
+        ]
+      },
+      {
+        "group": "Extensions",
+        "pages": [
+          {
+            "group": "Social Media Suite",
+            "icon": "share-nodes",
+            "pages": ["extensions/socialmediasuite/xai",
+                      "extensions/socialmediasuite/linkedin",
+                      "extensions/socialmediasuite/instagram",
+                      "extensions/socialmediasuite/facebook",
+                      "extensions/socialmediasuite/tiktok"
+                      ]
+          },
+          "extensions/video-video",
+          "extensions/video-image",
+          "extensions/video-text",
+          "extensions/product-photography",
+          "extensions/photo-studio",
+          "extensions/avatar",
+          "extensions/faceswap",
+          "extensions/midjourney",
+          "extensions/clipdrop",
+          "extensions/flux",
+          "extensions/voice-clone",
+          "extensions/sound-studio",
+          "extensions/music",
+          "extensions/voice-isolator",              
+          "extensions/speech-text-pro",              
+          "extensions/plagiarism",
+          "extensions/menu-builder",
+          "extensions/maintenance",
+          "extensions/hubspot",
+          "extensions/mailchimp",
+          "extensions/textract",
+          "extensions/seo-tool",
+          "extensions/xero",
+          "extensions/ibm",
+          "extensions/azure-openai",
+          "extensions/amazon-bedrock",
+          "extensions/open-router",
+          "extensions/perplexity",
+          "extensions/chat-share",
+          "extensions/realtime-chat",
+          "extensions/external-chat"            
+        ]
+      },
+      {
+        "group": "Advanced",
+        "pages": [
+          "advanced/localization",
+          "advanced/cron"       
+        ]
+      },
+      {
+        "group":"Versioning",
+        "pages":[
+           "versions/how-to-update"
+        ]
+     }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://berkine.ticksy.com/"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Buy Davinci AI",
+      "href": "https://1.envato.market/gbM0b5"
+    }
+  },
+  "seo": {
+      "indexing": "all"
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "youtube": "https://x.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  }
+}
