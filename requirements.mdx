@@ -3,104 +3,74 @@ title: 'Server Requirements'
 description: 'Ensure your server meets these requirements for a smooth Davinci AI installation and operation'
 ---
 
+This page outlines the necessary components and configurations to ensure your server is ready to host Davinci AI efficiently.
+
 <Info>
   **PHP Version Supported**: Currently script is fully tested for PHP 8.1 and PHP 8.2.
 </Info>
 
-Please enable following features in your hosting:
+## Core Requirements
 
-**Step 1**: Install Mintlify:
+### PHP and MySQL Versions
 
-<CodeGroup>
+Currently script is fully tested for PHP 8.1 and PHP 8.2, altough PHP 8.3 is supported, some of the 3rd party libraries used in the script might not support it at this point.
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+<CardGroup cols={2}>
+  <Card 
+    title="PHP Version"
+    icon="php"
+  >
+    PHP 8.1 or PHP 8.2
+  </Card>
+  <Card
+    title="MySQL Version"
+    icon="database"
+  >
+    5.7 or later
+  </Card>
+</CardGroup>
 
-```bash yarn
-yarn global add mintlify
-```
+### Essential PHP Extensions
 
-</CodeGroup>
+To run Davinci AI smoothly, make sure your PHP installation includes these extensions:
 
-**Step 2**: Navigate to the docs directory (where the `mint.json` file is located) and execute the following command:
+<Accordion title='Click to view required PHP Extensions'>
+  - ctype
+  - fileinfo
+  - json
+  - mbstring
+  - openssl
+  - pdo
+  - xml
+  - gd
+  - curl
+  - intl
+  - zip
+  - phar
+  - shell_exec()
+  - file_get_contents()
+</Accordion>
 
-```bash
-mintlify dev
-```
+## Minimum Server Requirements
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+You can host Davinci AI both on a shared hosting or on a VPS, decision is fully up to you and your budget. We recommend to select a hosting that allows you to enabled required PHP extensions and features. 
 
-### Custom Ports
+To ensure optimal performance of Davinci AI, we recommend the following minimum server specifications:
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
+<CardGroup cols={2}>
+  <Card 
+    title="Memory"
+    icon="memory"
+  >
+    2 GB RAM or more
+  </Card>
+  <Card
+    title="CPU"
+    icon="microchip"
+  >
+    2 vCPUs or more
+  </Card>
+</CardGroup>
 
-```bash
-mintlify dev --port 3333
-```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
-
-## Mintlify Versions
-
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Validating Links
-
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
-
-```bash
-mintlify broken-links
-```
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
-
-If the deployment is successful, you should see the following:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Code Formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
-  </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)

@@ -137,13 +137,7 @@
           "advanced/localization",
           "advanced/cron"       
         ]
-      },
-      {
-        "group":"Versioning",
-        "pages":[
-           "versions/how-to-update"
-        ]
-     }
+      }
     ],
     "global": {
       "anchors": [
@@ -156,8 +150,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
