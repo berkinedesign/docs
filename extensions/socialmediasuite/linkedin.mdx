@@ -1,4 +1,45 @@
 ---
 title: 'LinkedIn'
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the mint.json file'
+description: 'Setup your LinkedIn account so that your users will be able to post on their xAI accounts via Social Media Suite Extension'
 ---
+
+## LinkedIn Configuration
+
+Follow these steps to setup your LinkedIn Developer Account and include your API keys in Davinci AI. 
+
+<Steps>
+  <Step title="Step 1">
+    Go to <a href="https://developer.linkedin.com/" target="_blank">LinkedIn Developer Portal</a> and sign in there, afterwards click on the **My Apps** link.
+    <img src="/images/extensions/social-media/linkedin-1.png" />       
+  </Step>
+  <Step title="Step 2">
+    Create a new App. 
+     <img src="/images/extensions/social-media/linkedin-2.png" /> 
+  </Step>
+  <Step title="Step 3">
+    Fill in all the required fields, and click on **Create App** button.  
+    <img src="/images/extensions/social-media/linkedin-3.png" /> 
+  </Step>
+   <Step title="Step 4">
+    After your App is successfully created, click on it. And select the **Products** tab. And request access for **Share on LinkedIn** and **Sign In with LinkedIn using OpenID Connect** products. 
+    <img src="/images/extensions/social-media/linkedin-4.png" />
+  </Step>
+   <Step title="Step 5">
+    1. Next, while you have your App selected, click on the **Auth** tab, and under the **OAuth 2.0 setting** section, set your **Authorized redirect URLs for your app**.
+    2. It should be your **https://YOUR_DOMAIN_NAME/app/oauth/callback/linkedin** and click **Update** button after including your callback URL.  
+    <img src="/images/extensions/social-media/linkedin-5.png" />
+  </Step>
+  <Step title="Step 7">
+    1. The last step, while you are at the **Auth** tab, under the **Application credentials** section, generate and copy your **Client ID** and **Primary Client Secret**. 
+    <img src="/images/extensions/social-media/linkedin-6.png" />
+    2. Go to **AI Settings** page in Admin Panel, click on **Extensions** tab, and select **Social Media Suite** extension. 
+    3. Under **LinkedIn Settings** section, include your **LinkedIn Client ID** and **LinkedIn Client Secret** which you just copied earlier. 
+    <img src="/images/extensions/social-media/linkedin-7.png" /> 
+  </Step>
+  <Step title="Step 9">
+    After you have included all API keys in the **Linkedin Settings** section, click **Save** button. 
+  </Step>
+  <Step title="Step 9">
+    You know have completed the LinkedIn configuration. 
+  </Step>
+</Steps>
