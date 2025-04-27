@@ -1,4 +1,64 @@
 ---
 title: 'TikTok'
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the mint.json file'
+description: 'Setup your TikTok account so that your users will be able to post on their TikTok accounts via Social Media Suite Extension'
 ---
+
+## TikTok Configuration
+
+Follow these steps to setup your TikTok Developer Account and include your API keys in Davinci AI. 
+
+<Steps>
+  <Step title="Step 1">
+    Go to <a href="https://developers.tiktok.com/" target="_blank">TikTok Developer Portal</a> and sign in there, afterwards click on **Developer Portal**.
+    <img src="/images/extensions/social-media/tiktok-1.png" />       
+  </Step>
+  <Step title="Step 2">
+    Select **Manage Apps** and click on **Connect an App**. 
+    <img src="/images/extensions/social-media/tiktok-2.png" /> 
+  </Step>
+  <Step title="Step 3">
+    Provide App Name and click on **Confirm** button. 
+    <img src="/images/extensions/social-media/tiktok-3.png" /> 
+  </Step>
+   <Step title="Step 4">
+    On the next page, under the **Basic information** section, fill in the required fields as you prefer. Below is an example of how it was filled for our demo. 
+    <Note>TikTok requires you to verify your domain URL with DNS TXT record, some helpful guidance can be found <a href="https://www.youtube.com/watch?v=ggwnt_9NDoc" target="_blank">here</a></Note> 
+    <img src="/images/extensions/social-media/tiktok-4.png" />
+  </Step>
+   <Step title="Step 5">
+    Click on **Add products** button. 
+    <img src="/images/extensions/social-media/tiktok-6.png" />
+    And add following products as shown below. 
+    <img src="/images/extensions/social-media/tiktok-5.png" />
+  </Step>
+  <Step title="Step 6">
+    After adding your products, you will see a new **Login Kit** section appear, enter your TikTok callback URL, which is **https://YOUR_DOMAIN_NAME/app/oauth/callback/facebook**  
+    <img src="/images/extensions/social-media/tiktok-7.png" />
+  </Step>
+   <Step title="Step 7">
+    Under **Content Posting API** section, make sure you have enabled the checkbox for **Direct Post** and have **verified** your domain.    
+    <img src="/images/extensions/social-media/tiktok-8.png" />
+  </Step>
+   <Step title="Step 8">
+    On the **Add Scopes** section, make sure to add all scopes. 
+    <img src="/images/extensions/social-media/tiktok-9.png" />
+  </Step>
+   <Step title="Step 9">
+    Now go to **Credentials** section and copy your **Client Key** and **Cleint Secretn** credentials.
+    <img src="/images/extensions/social-media/tiktok-10.png" />
+  </Step>
+   <Step title="Step 10">
+    <Warning>After you are done with filling all fields, make sure to click on **Submit for review** button. Tiktok and need to proper business identification</Warning>
+  </Step>
+   <Step title="Step 11">
+    1. Go to **AI Settings** page in Admin Panel, click on **Extensions** tab, and select **Social Media Suite** extension. 
+    2. Under **TikTok Settings** section, include your **TikTok Client Key** and **TikTok Client Secret** with the Client Key and Client Secret values that you just copied earlier. 
+    <img src="/images/extensions/social-media/tiktok-11.png" /> 
+  </Step>
+  <Step title="Step 12">
+    After you have included all API keys in the **TikTok Settings** section, click **Save** button. 
+  </Step>
+  <Step title="Step 13">
+    You know have completed the TikTok configuration. 
+  </Step>
+</Steps>

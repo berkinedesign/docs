@@ -1,6 +1,65 @@
 ---
 title: 'AI Video to Video'
 icon: camera-movie
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the mint.json file'
+description: 'Re-animate your videos with evolved consistency with AI Video to Video Extension by simply uploading your target video and include desired prompt to animate'
 ---
+
+<Warning>This is a **Paid** extension that you need to first purchase via **Marketplace**</Warning>
+
+<Card title="Included Video to Video Models" >
+- CogVideoX 5b
+- AnimateDiff
+- Fast AnimateDiff
+- Upscale Video
+</Card>
+
+
+## Extension Configuration
+To be able to use AI Video to Video feature, follow these steps to setup this extension.
+
+<Steps>
+  <Step title="Step 1">
+    Go to the **Marketplace** in **Admin Panel** and install **AI Video to Video** extension.     
+    <img src="/images/extensions/video-video/video-1.png" />    
+  </Step>
+  <Step title="Step 2">
+    After installation is completed, go to **AI Settings** page in Admin Panel and click on **Extensions** tab there. Click on **AI Video to Video** there. 
+    <img src="/images/extensions/video-video/video-2.png" />
+  </Step>
+  <Step title="Step 3">
+     Go to <a href="https://fal.ai/" target="_blank">Fal AI</a> website, sign up with them and get your **API Key** on your profile page after you successfully complete the registration process on their website.
+     Make sure to fill up your balance on your Fal AI account as they do not offer any free credits upon registration. 
+    <Note>Store your API key securely and never share it publicly. The key provides direct access to your account.</Note>
+  </Step>
+   <Step title="Step 4">
+   To control the settings of **AI Video to Video** exension, return to **AI Settings** page in Admin Panel and click on the **Extensions** tab, and select **AI Video to Video** extension. 
+    1. Enter your **Fal AI API Key** in the input field. 
+    2. Turn on the checkboxes for **AI Video to Video Feature** and **AI Video to Video Free Tier Access** 
+    <Note>If you don't turn on AI Video to Video Free Tier Access, then users who did not subscribe to any subscription plan where you have AI Video to Video feature enabled, will not have any access to this feature</Note>
+    3. **Video Model credits per Video** section allows you set how many media credits each Video to Video model task will use for each video generation. Davinci AI give you full control on credit assignment per each media task.  
+    4. After you are done with configuration, click the **Save** button.  
+    <img src="/images/extensions/video-video/video-3.png" />
+  </Step>
+  <Step title="Step 5">
+    You know have completed the AI Video to Video extension configuration. Proceed to the section below on how to use it. 
+  </Step>
+</Steps>
+
+<Check>
+You have successfully comleted the setup process of this extension.
+</Check>
+
+## How to Use
+To get a full details of each and every technical featuer of the Video to Video model, you can refer to the  <a href="https://fal.ai/models?categories=video-to-video" target="_blank">Fal AI Video to Video API Page</a>
+
+### Create Video to Video task
+
+1. Go to AI Video to Video tab in the User panel 
+2. (Optional) Provide video title name as needed:
+3. Upload your target video, following video extensions are allowed: **.mp4 | .mov | .webm | .m4v | .gif**
+4. Select your Video to Video task LLM
+<Note>Upon selecting your Video to Video LLM option, settings below will change dynamically and will be fully relevant only for the selected model</Note>
+5. Depending on the Video to Video task you have selected, provide the information as needed based on the settings that appear below, default settings can remain as they are. To learn more about each of the features there, please refer to the <a href="https://fal.ai/models?categories=video-to-video" target="_blank">Fal AI Video to Video API Page</a>
+
+<img src="/images/extensions/video-video/video-4.png" />
 
