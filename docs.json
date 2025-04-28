@@ -28,7 +28,7 @@
         "group": "Integrations",
         "pages": [
           {
-            "group": "AI Vendors",
+            "group": "AI Providers",
             "pages": ["integrations/ai/openai",
                       "integrations/ai/anthropic",
                       "integrations/ai/xai",
@@ -41,6 +41,12 @@
                       ]
           },
           {
+            "group": "Other Providers",
+            "pages": ["integrations/other/youtube",
+                      "integrations/other/serper"
+                      ]
+          }, 
+          {
             "group": "Cloud Storages",
             "pages": ["integrations/storage/s3",
                       "integrations/storage/cloudflare",
@@ -49,13 +55,7 @@
                       "integrations/storage/gcp",
                       "integrations/storage/storj"
                       ]
-          },
-          {
-            "group": "Other Vendors",
-            "pages": ["integrations/other/youtube",
-                      "integrations/other/serper"
-                      ]
-          }         
+          }       
         ]
       },
       {
@@ -91,7 +91,8 @@
           {
             "group": "Social Media Suite",
             "icon": "share-nodes",
-            "pages": ["extensions/socialmediasuite/xai",
+            "pages": ["extensions/socialmediasuite/general",
+                      "extensions/socialmediasuite/x",
                       "extensions/socialmediasuite/linkedin",
                       "extensions/socialmediasuite/instagram",
                       "extensions/socialmediasuite/facebook",
