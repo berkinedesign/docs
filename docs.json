@@ -138,14 +138,26 @@
           "advanced/localization",
           "advanced/cron"       
         ]
+      },
+      {
+        "group": "Update",
+        "pages": [
+          "update/instructions",
+          "update/changelogs"       
+        ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Buy Davinci AI",
+          "href": "https://1.envato.market/gbM0b5",
+          "icon": "box-open"
+        },
+        {
+          "anchor": "Support Tickets",
+          "href": "https://berkine.ticksy.com",
+          "icon": "square-info"
         }
       ]
     }
