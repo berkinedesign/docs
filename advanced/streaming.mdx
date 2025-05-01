@@ -1,0 +1,46 @@
+---
+title: 'Text Streaming'
+description: 'Learn about text streaming functionality in Davinci AI and how to ensure it works properly on your server.'
+---
+
+## Introduction
+
+Text streaming is a built-in feature in Davinci AI that shows AI responses in real-time as they are generated, providing a more engaging chat experience. This guide explains how text streaming works and what to do if you encounter any issues
+
+## How It Works
+
+Davinci AI’s text streaming functionality:
+
+- Works out of the box on most web servers
+- Supports shared hosting environments
+- Requires minimal configuration in most cases
+
+<Note>Text streaming is enabled by default and should work immediately after installation. Most users won’t need to make any configuration changes.</Note>
+
+## Server Configuration
+
+While Davinci AI works with default server settings in most cases, some servers might need minor adjustments:
+
+### PHP Settings
+If streaming isn’t working, check these settings in your `php.ini` file, try each option separately, it varies from hosting to hosting:
+```javascript
+output_buffering = On
+```
+```javascript
+output_buffering = 4096
+```
+
+<Tip>If you’re using shared hosting and can’t modify php.ini, contact your hosting provider. Many providers can adjust these settings for you if needed.</Tip>
+
+
+## Troubleshooting Checklist
+
+Use this checklist to diagnose streaming issues:
+
+- Verify PHP configuration settings
+- Check web server buffering settings
+- Confirm no interfering caching mechanisms
+- Test with different browsers
+- Clear all application caches
+- Monitor server logs for errors
+- Verify hosting provider compatibility

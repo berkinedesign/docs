@@ -147,6 +147,7 @@
         "group": "Advanced",
         "pages": [
           "advanced/localization",
+          "advanced/streaming",
           "advanced/cron"       
         ]
       },
