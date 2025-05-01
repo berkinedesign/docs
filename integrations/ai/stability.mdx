@@ -1,0 +1,96 @@
+---
+title: 'Stability AI Integration'
+sidebarTitle: 'Stability AI'
+description: 'Enhance your Davinci AI platform with Stability AI’s advanced image generation capabilities. This guide walks you through setting up and leveraging Stability AI’s powerful models for creating unique and high-quality images.'
+---
+
+## Introduction
+
+Davinci AI’s Stability AI integration unlocks advanced image generation capabilities for your platform. With access to Stability AI’s cutting-edge models, you can significantly enhance your Imagine tool, allowing users to create unique and high-quality images from text descriptions.
+
+### Image Generation Models
+
+<Card title="Included Stability AI Models" >
+- Stability AI | Stable Diffusion Ultra
+- Stability AI | Stable Diffusion Core
+- Stability AI | Stable Diffusion 3.5 Large
+- Stability AI | Stable Diffusion 3.5 Large Turbo
+- Stability AI | Stable Diffusion 3.5 Medium
+- Stability AI | SDXL v1.0
+- Stability AI | Stable Diffusion v1.6
+</Card>
+
+## Connect Stability AI Account
+To be able to use your Stability AI for **AI Images** feature, follow these steps to setup integration.
+
+<Steps>
+  <Step title="Step 1">
+    If you don’t have an Stability AI account, [sign up here](https://platform.stability.ai/sign-up)
+  </Step>
+  <Step title="Step 2">
+    Once logged in, click on your profile image in the top right corner of the page.
+  </Step>
+  <Step title="Step 3">
+    Select **API Keys** from the left side menu and click the **+ Create API Key** button in the top right corner of the API Keys section.
+  </Step>
+   <Step title="Step 4">
+    After you have generated a new API key or selected existing one, copy your API key. 
+    <Note>Keep your API key secure. It provides access to Stability AI’s services and should not be shared publicly.</Note>
+  </Step>
+  <Step title="Step 5">
+    Login to Davinci AI using your admin credentials. 
+  </Step>
+  <Step title="Step 6">
+    In **Admin Panel**, navigate to **AI Settings** -> **AI API Keys** tab. 
+  </Step>
+  <Step title="Step 7">
+    Click on **Stable Diffusion** tab there. 
+    <img src="/images/ai/stability/stability-1.png" />
+  </Step>
+  <Step title="Step 8">
+    Include your API key under **Stable Diffusion API Key** input field. <br /> 
+    Optionally you can use many API keys and the **SD API Key Usage Model** as **Random API Key**, but we highly recommend you to have it set as **Only Main API Key**..<br />
+    If you enable **Personal Stable Diffusion API Key**, all users will be required to use their own API keys that they need to include in their **My Account** page. 
+    <img src="/images/ai/stability/stability-2.png" />
+  </Step>
+  <Step title="Step 9">
+    After you are done with configurations, click on **Save** button. 
+  </Step>
+</Steps>
+
+<Check>
+Congratulations! You have successfully completed the Stability AI setup process for **AI Images** feature.
+</Check>
+
+## Use Stability AI with AI Images
+
+You need to list which vendors you want to be available in the AI Images feature. For detailed instructions on AI Images configuration please refer to the [AI Images](/core/images) tab. 
+
+## Davinci AI Tools Powered by Stability AI
+
+Following AI tools can be used with Stability AI
+
+1. **AI Images** - what you have just configured
+2. **AI Image to Video** - use the configuration links below
+3. **AI Photo Studio** - use the configuration links below
+
+<CardGroup cols={2}>
+  <Card
+    title="AI Image to Video"
+    icon="video"
+    href="/extensions/voice-clone"
+  >
+    Setup Stability AI for AI Image to Video extension
+  </Card>
+  <Card
+    title="AI Photo Studio"
+    icon="photo-film"
+    href="/extensions/voice-isolator"
+  >
+    Setup Stability AI For AI Photo Studio extension
+  </Card>
+</CardGroup>
+
+
+
+

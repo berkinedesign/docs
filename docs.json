@@ -59,6 +59,13 @@
         ]
       },
       {
+        "group": "Core Features",
+        "pages": [
+          "core/voiceover",          
+          "core/images"          
+        ]
+      },
+      {
         "group": "SaaS Features",
         "pages": [
           {

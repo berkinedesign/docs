@@ -1,0 +1,86 @@
+---
+title: 'Wasabi Storage Integration'
+sidebarTitle: 'Wasabi'
+description: 'Offload your media inputs and results to Wasabi Cloud Storage'
+---
+
+## Introduction
+
+Davinci AI’s allows you to integrate cloud storages to store results of various media related features of the script. This allows you to make sure that you always have sufficent storage space for your customers.
+Using cloud storage option also minimizes the latency for your user to access their media results as data could be avaiable via CDN framework of the cloud vendors.  
+
+## Connect Wasabi Account
+To be able to use your Wasabi account, follow these steps to setup integration.
+
+<Steps>
+  <Step title="Step 1">
+    If you don’t have a Wasabi account, [sign up here](https://wasabi.com)
+  </Step>
+  <Step title="Step 2">
+    Once you are logged into your Wasabi Account, select **Buckets** under Data Access menu panel and click **Create Bukcet**
+    <img src="/images/storage/wasabi/wasabi-1.png" />
+  </Step>
+  <Step title="Step 3">
+     Prorive a unique **Bucket Name** and select your **Region** and click **Create Bucket**. Make a note of both them, you will be including them into the script at the last step.
+     <img src="/images/storage/wasabi/wasabi-2.png" />
+  </Step>
+  <Step title="Step 4">
+    After the bucket is created, select your bucket from the list and under **Actions** tab, click on **Settings**.
+    <img src="/images/storage/wasabi/wasabi-3.png" />
+  </Step>
+  <Step title="Step 5">
+    In the Settings page, make sure you **Enable Public Access** for this bucket.
+    <img src="/images/storage/wasabi/wasabi-4.png" />
+  </Step>
+  <Step title="Step 6">
+    Now when you are done creating and configuring your Wasabi Bucket, you will need to create **Access Keys** to be able to use your Wasabi Account.<br />
+    Go to **Access Keys** under Data Access menu panel and click on **Create New Access Key**.
+    <img src="/images/storage/wasabi/wasabi-5.png" />
+  </Step>
+  <Step title="Step 7">
+    Click Create button and **Download** or **Copy** your keys immediate as you get to see your Secret Access key only once. 
+    <img src="/images/storage/wasabi/wasabi-6.png" />
+  </Step>
+  <Step title="Step 8">
+    Login to Davinci AI using your admin credentials. 
+  </Step>
+  <Step title="Step 9">
+    In **Admin Panel**, navigate to **AI Settings** -> **AI API Keys** tab. 
+  </Step>
+  <Step title="Step 10">
+    Click on **Wasabi** tab there. 
+    <img src="/images/storage/wasabi/wasabi-7.png" />
+  </Step>
+  <Step title="Step 10">
+    Fill in following required input field:
+    - **Wasabi Access Key** 
+    - **Wasabi Secret Access Key** 
+    - **Wasabi Bucket Name** 
+    - **Set Wasabi Region** 
+    <img src="/images/storage/wasabi/wasabi-2.png" />
+  </Step>
+  <Step title="Step 12">
+    After you are done with configurations, click on **Save** button. 
+  </Step>
+</Steps>
+
+<Check>
+Congratulations! You have successfully comleted the Wasabi setup process.
+</Check>
+
+## Davinci AI Tools which supports storing results in Wasabi
+
+Following AI tools can be store results in Wasabi Cloud Storage
+<Note>Support for more AI tools will be added soon, we are actively working on that</Note>
+
+1. **AI Voiceover** 
+2. **AI Images**
+2. **AI Speech to Text**
+
+<Info>Via AI Settings page in Admin Panel, you can set default cloud storage vendor for each of the supported AI tools individually</Info>
+
+
+
+
+
+
