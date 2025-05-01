@@ -21,7 +21,11 @@
         "pages": [
           "introduction",
           "requirements",              
-          "installation"
+          {
+            "group": "Installation",
+            "pages": ["installation/main"
+                    ]
+          }
         ]
       },
       {

@@ -1,0 +1,65 @@
+---
+title: 'Main Installation Guide'
+sidebarTitle: 'Main'
+description: 'A comprehensive guide to install Davinci AI on your server, with detailed steps and solutions for common issues.'
+---
+
+Welcome to the Davinci AI installation guide. This tutorial will walk you through the process of setting up Davinci AI on your server.
+
+## Before You Start
+
+1. Make sure that your hosting server meets the [Server Requirements](/requirements)
+2. Create your database and database user, note down the **database name**, **username** and **password**
+
+## Installation Steps
+
+<Steps>
+  <Step title="Upload Davinci AI Files">
+    1. Make sure your domain's DNS settings are valid and your domain is publicly accessbile already. 
+    2. Locate the **openaidavinci-xx.zip** file in your DavinciMainFiles.zip package and upload this zip file to your hosting server.
+    3. Unzip it in the **root** directory of your domain. 
+    <Note> Some hosting platform hide files starting with **'.' (hidden files)**, so make sure that in your settings of your cPanel you enable this option.</Note>
+    <Warning> If your local Windows/Linux/MaxOS environment does not show hidden files, and you are planning to upload the contents of the file directly via FTP, make sure you enable viewing hidden files locally first even before unzipping, otherwise you will not upload all hidden files such as .env/.htaccess to your FTS server simply because your local environment will not see them.</Warning>
+  </Step>
+  <Step title="Start Installation">
+    Now you are ready to run the install script. 
+    1. Type in your browser **https://YOUR_DOMAIN_NAME/install** and press Enter. This will initiate the Davinci AI installation wizard. 
+    2. Click on **Start Intallation** button.
+    <img src="/images/install/install-1.png" />
+  </Step>
+  <Step title="PHP Requirements">
+    Make sure required php packages are installed and enabled on your hosting server. Click **Next** to continue.
+    <img src="/images/install/install-2.png" />
+  </Step>
+  <Step title="Folder Access Permissions">
+    Make sure listed folder are publicly accessbile. Click **Next** to continue.
+    <img src="/images/install/install-3.png" />
+  </Step>
+  <Step title="Database configuration">
+    For database configuration, enter your newly created database credentials, such as **Database Name**, **Database User** that is allowed to access this database and **Database User Password**. <br />
+    Unless you use specific server address DNS name or IP address and different port number for your database in your hosting, use **localhost** for hostname and **3306** for port.
+    <img src="/images/install/install-4.png" /> 
+  </Step>
+  <Step title="Activation">
+    On the final step enter your **Envato License key** for Davinci AI and also your **Envato Username**. In case if you don't know where to get your license, you can [check this article](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-).
+    <img src="/images/install/install-5.png" /> 
+  </Step>
+  <Step title="Installatoin Completed">
+     If all the required php libraries are turned on in your hosting, installation will finish quickly and you are now fully ready to start. <br /> 
+     The default admin user is created during this last step, the login credentials are **admin@example.com** and default password is **admin12345**. You can change it after loggin in in your My Accounts page as needed.
+    <img src="/images/install/install-6.png" />
+  </Step>
+  <Step title="Finish">
+    <Check>You have successfully completed the installation of Davinci AI</Check>
+  </Step>
+</Steps>
+
+## Troubleshooting 
+
+If you encounter any issues during the installation process:
+
+1. Double-check that you’ve followed each step correctly.
+2. Verify that your server meets all the [requirements](/requirements).
+3. Ensure all file permissions are set correctly.
+4. Make sure that your Database credentials are valid and your user has access to the database
+5. If you’re still stuck after trying the solutions in the troubleshooting guide, don’t hesitate to [reach out to our support team](https://berkine.ticksy.com).
