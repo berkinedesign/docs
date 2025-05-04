@@ -170,6 +170,11 @@
           "anchor": "Support Tickets",
           "href": "https://berkine.ticksy.com",
           "icon": "square-info"
+        },
+        {
+          "anchor": "Feature Requests",
+          "href": "https://davinciai.canny.io/",
+          "icon": "square-dashed-circle-plus"
         }
       ]
     }
