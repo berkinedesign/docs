@@ -126,6 +126,7 @@
           "extensions/voice-isolator",              
           "extensions/speech-text-pro",              
           "extensions/plagiarism",
+          "extensions/wordpress",
           "extensions/menu-builder",
           "extensions/maintenance",
           "extensions/hubspot",
@@ -146,7 +147,7 @@
       {
         "group": "Advanced",
         "pages": [
-          "advanced/localization",
+          "advanced/language",
           "advanced/streaming",
           "advanced/cron"       
         ]
