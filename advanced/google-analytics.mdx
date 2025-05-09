@@ -1,57 +1,133 @@
 ---
-title: 'Google Analytics'
-description: 'Learn how to translate Davinci AI into multiple languages and manage language settings for your users.'
+title: 'Google Analytics Integration'
+sidebarTitle: 'Google Analytics'
+description: 'Enhance your Davinci AI platform with Google Analytics to track user behavior and gain valuable insights. This guide walks you through setting up Google Analytics for your Davinci AI website.'
 ---
 
 ## Introduction
 
-Localization is a crucial feature that allows you to make Davinci AI accessible to a global audience. This guide will walk you through the process of translating your Davinci AI, managing language files, and enabling language selection for your users.
+Davinci AI's Google Analytics integration allows you to track and analyze user behavior on your platform. By adding Google Analytics, you can gain valuable insights into how users interact with your Davinci AI website, helping you make data-driven decisions to improve user experience and engagement.
 
-## How to Translate
+<Info>Davinci AI supports GA for frontend and separate one for the Admin Dashboard, both have different setup mechanisms, below are configuration steps for both</Info>
 
-Davinci AI uses `json` files per language, which are stored under `/lang` directory in the root folder of your domain with their respective country codes. Example `en.json` for English language.
+## Frontend - Google Analytics Configuration
+
+Follow these steps to connect Google Analytics with your Davinci AI platform's frontend page:
 
 <Steps>
-  <Step title="Overview">
-    Go to **Admin Panel** -> **General Settings** -> **Languages** page to access the **Language Manager** feature.  
+  <Step title="Step 1">
+    If you don’t have a Google Analytics account, [sign up here](https://analytics.google.com/).
   </Step>
-  <Step title="Add New Language">
-    To add a new language, select your language as needed from the **Add New Language** section and click on **Add** button.
-    <img src="/images/advanced/language/language-1.png" />
+  <Step title="Step 2">
+    Once logged in, click on the **Admin** button on the bottom right corner.  
+    <img src="/images/advanced/analytics/ga-1.png" />
   </Step>
-  <Step title="Installed Languages">
-    All added languages by you will be listed in the **Installed Language** section. <br />
-    Use the **checkboxes** to activate or deactivate installed languages, it will save your checkbox changes automatically.
-    <Note>User will see only activated languages from the list</Note>
-    <img src="/images/advanced/language/language-2.png" />
+  <Step title="Step 3">
+   Create a new **Property** for your Davinci AI website
+   <img src="/images/advanced/analytics/ga-2.png" />
   </Step>
-  <Step title="Set Default Language">
-    To set default language, select your target language as needed from the **Default Language** section and click on **Set** button. <br />
-    Note that this list will show only the languages which were enabled in the Installed Languages section, refresh your page if you don't see newly added or enabled languages in the dropdown list.
-    <Tip>Only admin can set default languages, hence it will be common for all users as well</Tip>
-    <img src="/images/advanced/language/language-3.png" />
+   <Step title="Step 4">
+    Fill in the property details and rest of the information as needed. 
+     <img src="/images/advanced/analytics/ga-3.png" />
   </Step>
-  <Step title="Generate All JSON Files">
-    You can genereate JSON files for all languages listed in the **Installed Languages** section with just one click regardless if some of the languages are enabled there or not via Publish All JSON Files button.
-    <Warning>Please note that apart from `en.json` file, all other json language files will be empty, it is up to you to translate them accordingly</Warning>
-    <img src="/images/advanced/language/language-4.png" />
+  <Step title="Step 5">
+     Go to the home page and copy your **Measurement ID**. 
+     <Tip>If you’re new to Google Analytics, consider watching their introductory videos or reading their setup guide for beginners.</Tip>
+     <img src="/images/advanced/analytics/ga-4.png" />
   </Step>
-  <Step title="Synchronize Your JSON files and Main (English) JSON Files">
-     This is one of the important features of the Language Manager. It can do 2 things:
-     1. As it is not efficient to translate every line individually, most people will simply translate genereated JSON files via various online tools that are avaialble out there. So if you have your language JSON file, simply include it in the `lang` folder in the root directory of your domain, make sure that your language is listed in the Installed Languages list and activated, afterwards click on **Reinstall Language Files** button. This will synchronize all your translations in your updated json files with the database of the script. 
-     2. As the script is rapidly growing, the main **lang/en.json** file is regularly updated with almost every update, so make sure to click on **Reinstall Language Files** button if you see in the changelogs that new words were added statement, it will automaically add new strings into all exisitng json files in the lang folder without overwriting existing contents, and the end of the list you will see new strings added for you that you can simply translate manually (as explained in step 6) and save as the added list per update is usually small.
-    <img src="/images/advanced/language/language-4.png" />
+  <Step title="Step 6">
+     Login to the Davinci AI as Admin. Go to the **Admin Panel** -> **General Settings** -> **Global Settings** and scroll to **Google Analytics** section. <br />
+     Inlude your **Google Analytics Tracking ID** that you copied in the previous step, turn on the **Enable Google Analytics** checkbox and click on **Save** button. 
+     <img src="/images/advanced/analytics/ga-5.png" />
   </Step>
-  <Step title="Translate Individual Strings">
-    You can also generate individual language json file and/or translate directly strings by clicking on the target language menu button under **Installed Language** section, and select either **Edit Strings** to translate strings individually or **Generate JSON file** which will generate a JSON file only for this language, which you can use to translate on variou online json translator platforms like [this paid json translator platform](https://hotpot.ai/file-translator?s=translate-json).
-    <img src="/images/advanced/language/language-5.png" />
-  </Step>
-  <Step title="Add New Custom Strings via Language Manager">
-    <Warning>This option is not available yet, but will come soon as it is already listed on our roadmap for upcoming updates</Warning>
-  </Step>
-  <Step title="Final">
-    You know have completed the Language Manager configuration. 
+  <Step title="Step 7">
+    You now have completed the Google Analytics configuration for frontend.  
   </Step>
 </Steps>
 
+
+## Admin Dashboard - Google Analytics 4 Configuration
+
+Davinci AI has integrated Google Analytics metrics view in the Admin Dashboard page, so you could directly see all your metrics from your Google Analytics account in your Admin Panel. 
+
+<Steps>
+  <Step title="Step 1">
+    Login into your [Google Cloud Console](https://console.cloud.google.com/) account.
+  </Step>
+  <Step title="Step 2">
+    Once logged in, select your **project** that you want to use.  
+    <img src="/images/advanced/analytics/ga-41.jpg" />
+  </Step>
+  <Step title="Step 3">
+    Search for **google analytics data api** and select it among the search results as shown below.
+   <img src="/images/advanced/analytics/ga-42.jpg" />
+  </Step>
+   <Step title="Step 4">
+    After selecting it make sure to **Enable** it. 
+     <img src="/images/advanced/analytics/ga-43.jpg" />
+  </Step>
+  <Step title="Step 5">
+     Next, select **Credentials** tab from side menu. 
+     <img src="/images/advanced/analytics/ga-44.jpg" />
+  </Step>
+  <Step title="Step 6">
+     While you are on the Credentials page, select **Manage Service Accounts**.
+     <img src="/images/advanced/analytics/ga-45.jpg" />
+  </Step>
+  <Step title="Step 7">
+     Next click on **Create Service Account**.
+     <img src="/images/advanced/analytics/ga-46.jpg" />
+  </Step>
+  <Step title="Step 8">
+     Provide require information as you prefer and click **Done**.
+     <img src="/images/advanced/analytics/ga-47.jpg" />
+  </Step>
+  <Step title="Step 9">
+     Next select your newly created service account and under Actions column, select **Manage Keys**.
+     <img src="/images/advanced/analytics/ga-48.jpg" />
+  </Step>
+  <Step title="Step 10">
+     Next select **Create New Key**.
+     <img src="/images/advanced/analytics/ga-49.jpg" />
+  </Step>
+   <Step title="Step 11">
+     Next select Select key type to be **JSON** and save the file somewhere, you will need it soon..
+     <img src="/images/advanced/analytics/ga-49.jpg" />
+  </Step>
+   <Step title="Step 12">
+     Now let's setup your Google Analytics account. Loging to your Google Analytics account (by default it is not GA4 only) and select your target account and click on **Admin** button at the bottom
+     <img src="/images/advanced/analytics/ga-50.jpg" />
+  </Step>
+   <Step title="Step 13">
+     Next select **Account Access Management**.
+     <img src="/images/advanced/analytics/ga-51.jpg" />
+  </Step>
+  <Step title="Step 14">
+    Next click on the **Add Users** button.
+     <img src="/images/advanced/analytics/ga-52.jpg" />
+  </Step>
+  <Step title="Step 15">
+     Enter the email same as the **client_email** from the json file that you generated at step 11.
+     <img src="/images/advanced/analytics/ga-53.jpg" />
+  </Step>
+   <Step title="Step 16">
+    Next select **Property** Settings.
+     <img src="/images/advanced/analytics/ga-54.jpg" />
+  </Step>
+   <Step title="Step 17">
+     Save the **Property ID** value.
+     <img src="/images/advanced/analytics/ga-55.jpg" />
+  </Step>
+   <Step title="Step 18">
+    Login to the Davinci AI as Admin. Go to the **Admin Panel** -> **General Settings** -> **Global Settings** and scroll to **Google Analytics** section. <br />
+     Enter your ***Google Analytics Property ID** and **Google Service Account Credentials JSON** File Name and click save.
+     <img src="/images/advanced/analytics/ga-56.png" />
+  </Step>
+   <Step title="Step 19">
+    Last important step would be to upload your json file to you hosting and store it under **storage/app/analytics/**>
+  </Step>
+  <Step title="Step 20">
+    You now have completed the Google Analytics 4 configuration for admin dashboard.  
+  </Step>
+</Steps>
 
