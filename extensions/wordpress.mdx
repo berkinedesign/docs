@@ -6,6 +6,117 @@ description: 'Take advantage of Davinci AI Powerful AI tools to generate posts f
 
 <Warning>This is a **Paid** extension that you need to first purchase via **Marketplace**</Warning>
 
+## Introduction
 
+Davinci AI's WordPress Extension allows you to gerenate varios posts with the help of AI and post them instantly on any of your connected WordPress accounts, or schedule them to be posted at a later time. 
 
+### WordPress Account Setup
+
+To configure you WordPress account, follow these steps listed below:
+
+<Steps>
+  <Step title="Step 1">
+    As Wordpress integration is a user based feature, that is each user needs to connect their WP accounts to leverage this extension. 
+  </Step>
+  <Step title="Step 2">
+    Log in to your WordPress website's **admin dashboard** using your credentials.
+  </Step>
+  <Step title="Step 3">
+   **Disable 2FA** in case if you have turned it on in your settigs.
+  </Step>
+   <Step title="Step 4">
+    In your WordPress dashboard, go to **Settings** -> **Permalinks** page and select postname.
+    <img src="/images/extensions/wordpress/wp-1.png" />
+  </Step>
+  <Step title="Step 5">
+     Next, go to **Plugins** -> **Add New Plugin** and install **WordPress REST API Authentication**, make sure that after installation it is **activated**.
+    <img src="/images/extensions/wordpress/wp-2.png" />
+  </Step>
+  <Step title="Step 6">
+     Once the installation is complete click on **miniOrange API Authentication** and click on **JWT Authentication** as shown in the image
+     <img src="/images/extensions/wordpress/wp-3.png" />
+  </Step>
+  <Step title="Step 7">
+     Click on **Next** button as shown in the image.
+     <img src="/images/extensions/wordpress/wp-4.png" />
+  </Step>
+  <Step title="Step 8">
+     Click on **Finish** button as shown in the image.
+     <img src="/images/extensions/wordpress/wp-5.png" />
+  </Step>
+  <Step title="Step 7">
+    <Check>You have completed WordPress Account setup</Check> 
+  </Step>
+</Steps>
+
+### WordPress Extension Configuration 
+
+To configure your WordPress Extension, follow these steps listed below:
+
+<Steps>
+  <Step title="Step 1">
+    Go to the **Marketplace** in **Admin Panel** and install **WordPress Integration** extension.     
+    <img src="/images/extensions/wordpress/wp-6.png" />    
+  </Step>
+  <Step title="Step 2">
+    After installation is completed, go to **AI Settings** page in Admin Panel and click on **Extensions** tab there. Click on **Wordpress Integration** there. 
+    <img src="/images/extensions/wordpress/wp-7.png" />
+  </Step>
+  <Step title="Step 3">
+    1. Turn on the checkboxes for **Wodpress Integration Feature** and **Wodpress Integration Free Tier Access** 
+        <Note>If you don't turn on Wordpress Integration Free Tier Access, then users who did not subscribe to any subscription plan where you have Wordpress Integration feature enabled, will not have any access to this feature</Note>
+    2. If you want all your users to be able to schedule posts, then turn on **Wodpress Integration Auto Post Feature** checkbox. 
+    3. Under **Total Allowed Wordpress Websites per Free Tier User** and **Total Allowed Scheduled Posts per Free Tier User** input fields, you can control how many Wordpress websites your free tiers users can connect and how many posts they can schedule in total. 
+    4. After you are done with setup click on **Save** button.
+    <img src="/images/extensions/wordpress/wp-8.png" />
+  </Step>
+   <Step title="Step 4">
+    As the Wordpress Integation is part of the main **Integration** feature of Davinci AI, you need to enable this main **Integration** featue as well. 
+    For that, go to **AI Settings** page in **Admin Panel**
+  </Step>
+  <Step title="Step 5">
+    1. To make sure that **Integration** feature is enabled for all users, under **General AI Settings** tab -> **AI Features Control (For All Groups)** section, turn on the **Integration Feature (For All Groups)** checkbox and click on **Save** button.
+    2. As Davinc AI provides detailed granular control of features between subscribers and free tier users, you can separately control settings for free tiers users. To make sure that the Free Tier users also can use the **Integration** feature, under **Free Trial Features** tab -> **AI Features Control (For Non-Subscribers)** section, turn on the **Integration Feature Access (For Non-Subscribers)** checkbox and click on the **Save** button. 
+  </Step>
+  <Step title="Step 6">
+    <Check>You have completed WordPress Extension configuration</Check> 
+  </Step>
+</Steps>
+
+### How to Add Wordpress Website
+
+After you are done with previous configurations, it is time to add your wordpress websites in the Integration feature, follow the steps listed below:
+
+<Steps>
+  <Step title="Step 1">
+    In the **User Panel** in the sidepanel menu section, click on the **Integration** feature.    
+    <img src="/images/extensions/wordpress/wp-9.png" />    
+  </Step>
+  <Step title="Step 2">
+    Click on the **Manage** button on the **Wordpress** integration there. 
+    <img src="/images/extensions/wordpress/wp-10.png" />
+  </Step>
+  <Step title="Step 3">
+    Now you can start adding your Wordpress domain. Note that you can add domains up to the value specified there. Click on the **Add New Domain** button. 
+    <img src="/images/extensions/wordpress/wp-11.png" />
+  </Step>
+   <Step title="Step 4">
+    Provide your Wordpress connection information, make sure that this Wordpress domain was properly configured as was shown above. 
+    - Provide **WP Website Name**, this will allow you to easily identify it among others later
+    - Provide **WP Website URL**, make sure that it does not end with '**/**' sign at the end
+    - Provide your Wordpress **Admin Username**
+    - Provide your Wordpress **Admin Password**
+    - Turn on the **Activate** checkbox
+    After you have provided all information, click on the **Create** button, it will process the connection and if all your settings are correct, it will genreate a secure **connection token** behind the scenes and will store it with your WP credentials that you provided. 
+  </Step>
+  <Step title="Step 5">
+    When a Wordpress domain is successfully connected, you will see a success message, and your new domain appears in the list as well. 
+    <img src="/images/extensions/wordpress/wp-12.png" />
+  </Step>
+  <Step title="Step 6">
+    <Check>You have completed adding Wordpress domain</Check> 
+  </Step>
+</Steps>
+
+### How to Use
 
