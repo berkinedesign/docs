@@ -150,6 +150,7 @@
           "advanced/language",
           "advanced/streaming",
           "advanced/google-analytics",
+          "advanced/restapi",   
           "advanced/cron"       
         ]
       },

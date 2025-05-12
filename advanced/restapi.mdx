@@ -1,0 +1,49 @@
+---
+title: 'Rest API Setup'
+sidebarTitle: 'Rest API'
+description: 'Davinci AI comes with support for its own Rest API for core features of the script'
+---
+
+## Introduction
+
+Use Rest API that comes with the Davinci AI to connect your applications and leverage core AI features of Davinci AI. 
+
+<Info>Support for more AI tools via Rest API is coming in the near future</Info>
+
+## Rest API Configuration
+
+To setup Rest API at your installation, follow these steps:
+
+<Steps>
+  <Step title="Step 1">
+    Open **terminal** in your hosting platform.     
+  </Step>
+  <Step title="Step 2">
+    Next, you will need to install **Laravel Passport** feature and generate the **encryption keys**. Run the following command in your terminal 
+    ```php
+    php artisan passport:install
+    ```
+  </Step>
+  <Step title="Step 3">
+    Copy and save the generated **Client ID** and **Client Secret** values generated in your terminal after running the Step 2 command. You’ll need these for accessing the RestAPI
+  </Step>
+   <Step title="Step 4">
+     Laravel Passport tables should already be included in your database as they come with the update package but you can migration command at any time if needed as it does not alter any of the existing tables.
+     ```php
+    php artisan migrate
+    ```
+  </Step>
+  <Step title="Step 5">
+    To generate RestAPI documentation using **L5-Swagger** so that you can have access to the actual supported Rest API calls list, type the following command in your terminal:  
+     ```php
+    php artisan l5-swagger:generate
+     ```
+  </Step>
+  <Step title="Step 6">
+    Congratulations! You now have RestAPI and documentation properly installed in your script. To access RestAPI documentations visit following URL in your browser:  <br />
+     `https://YOUR-DOMAIN-NAME/api/v1/documentation`
+  </Step>
+  <Step title="Step 6">
+    <Check>You have successfully configured the RestAPI, follow the RestAPI docs on further information</Check>
+  </Step>
+</Steps>
