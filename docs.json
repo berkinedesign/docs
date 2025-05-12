@@ -65,6 +65,7 @@
       {
         "group": "Core Features",
         "pages": [
+          "core/models",          
           "core/voiceover",          
           "core/images"          
         ]
