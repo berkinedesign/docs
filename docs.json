@@ -152,7 +152,9 @@
           "advanced/streaming",
           "advanced/google-analytics",
           "advanced/restapi",   
-          "advanced/cron"       
+          "advanced/smtp",       
+          "advanced/cron",       
+          "advanced/sitemap"       
         ]
       },
       {

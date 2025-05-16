@@ -1,4 +1,50 @@
 ---
 title: 'PayPal'
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the mint.json file'
+description: 'Learn how to seamlessly integrate PayPal payments into your Davinci AI platform, enabling secure and convenient transactions for your users.'
 ---
+
+<Warning>PayPal payment gateway is part of SaaS feature, hence requires to have Extended License</Warning>
+
+<Note>PayPal supports both `Prepaid` and `Subscription` plans in Davinci AI</Note>
+
+## Introduction
+
+Integrating PayPal with Davinci AI allows you to offer a widely recognized and trusted payment solution for your users. This guide will walk you through the process of setting up PayPal payments, from creating your PayPal business account to configuring webhooks.
+
+## Step 1: Set Up Your PayPal Business Account
+
+If you haven’t already, sign up for a PayPal Business account:
+
+- Visit the [PayPal Business](https://www.paypal.com/us/business) website and click on **Sign Up** button
+- Follow the prompts to create and verify your business account
+- Complete any additional verification steps required by PayPal
+
+
+## Step 2: Obtain PayPal API Credentials
+
+To connect Davinci AI with PayPal, you’ll need to retrieve your API credentials:
+
+<Steps>
+  <Step title="Step 1">
+    Log in to the [PayPal Developer Dashboard](https://developer.paypal.com/dashboard/)    
+  </Step>
+  <Step title="Step 2">
+    Navigate to **Apps & Credentials**
+    <Warning>Make sure you are not in your sandbox environment, if you don't have a PayPal Business account, you will be shown only sandbox API keys by default</Warning>
+  </Step>
+  <Step title="Step 3">
+    Click on **Create App** to generate a new app for your integration
+  </Step>
+   <Step title="Step 4">
+   Set the following details:
+   - **App Name**: Choose a name for your integration (e.g., “Davinci AI Payments”)
+   - Select **Merchant** as the app type
+  </Step>
+  <Step title="Step 5">
+    Click **Create App**
+  </Step>
+  <Step title="Step 5">
+    On the next page, you’ll find your **Client ID** and can generate a **Secret Key**, copy both of them. 
+  </Step>
+</Steps>
+<Note>Keep your Secret Key confidential! Never share it publicly or include it in client-side code.</Note>
